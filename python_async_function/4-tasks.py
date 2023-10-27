@@ -38,4 +38,4 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
         # once the current task is donde append it to the final list
         final_delay_list_sorted.append(task_to_save)
     # return the sorted list
-    return final_delay_list_sorted
+    return sorted(final_delay_list_sorted)
