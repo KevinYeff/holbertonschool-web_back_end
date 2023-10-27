@@ -29,7 +29,7 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     # let's define a list
     final_delay_list_sorted: List[float] = []
     # we need to sort the results of the prev function
-    for current_task in asyncio.as_completed(delays_of_prev_func):
+    for current_task in delays_of_prev_func:
         # At this point the asyncio.as_completed function returns a
         # future sequence in ascending order but we can't save them
         # for current_task take this as the current iterable, so it needs
