@@ -17,5 +17,5 @@ async def async_generator() -> Generator[float, None, None]:
         # waits 1 sec per iteration
         await asyncio.sleep(1)
         # generates a random float number on demand
-        yield uniform(0,10)
+        yield uniform(0, 10)
         # 1st iteration Pauses
