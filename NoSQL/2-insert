@@ -1,6 +1,6 @@
 // Script that inserts a document in a collection
 
-db.school.insertOne(
+db.school.insert(
     {
         name: "Holberton school"
     }
