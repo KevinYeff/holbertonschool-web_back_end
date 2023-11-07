@@ -1,0 +1,3 @@
+// Script that creates or uses a MongoDB database
+
+use my_db
