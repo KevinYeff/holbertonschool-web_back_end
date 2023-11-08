@@ -68,7 +68,7 @@ class Server:
         pagination: List[List] = self.get_page(page, page_size)
         total_pages: int = math.ceil(len(self.dataset()) / page_size)
         # https://stackoverflow.com/questions/11880430/
-        next_page = page + 1 if page + 1 > total_pages else None
+        next_page = page + 1 if page + 1 < total_pages else None
         prev_page = page - 1 if page - 1 > 1 else None
 
         dict: Dict = {
