@@ -12,7 +12,7 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
     start to end
     Note: In Pagination all the indexes starts at 1"""
     if page > 0 and page_size > 0:
-        if page >= 0:
-            start = (page - 1) * page_size
-            end = start + page_size
-            return (start, end)
+        pass
+    start = (page - 1) * page_size
+    end = start + page_size
+    return (start, end)
