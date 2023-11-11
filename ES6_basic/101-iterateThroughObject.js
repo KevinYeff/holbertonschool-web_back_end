@@ -4,11 +4,10 @@ export default function iterateThroughObject(reportWithIterator) {
   for (const name of reportWithIterator) {
     if (i < reportWithIterator.length - 1) {
       str += `${name} | `;
-    }
-    else {
+    } else {
       str += `${name}`;
     }
-    i++;
+    i += 1;
   }
   return str;
 }
