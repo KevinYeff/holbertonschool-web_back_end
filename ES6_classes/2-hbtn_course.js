@@ -34,10 +34,10 @@ export default class HolbertonCourse {
   }
 
   set students(students) {
-    if (Array.isArray(students) && students.every((el) => typeof el !== 'string')) {
-      throw TypeError('ERROR');
-    } else {
+    if (Array.isArray(students) && students.every((el) => typeof el === 'string')) {
       this._students = students;
+    } else {
+      throw TypeError('ERROR');
     }
   }
 }
