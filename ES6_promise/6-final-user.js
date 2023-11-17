@@ -16,7 +16,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       //     //  console.log(result);
       //   }
       // }
-      console.log(promisesResults);
+      //  console.log(promisesResults);
       return promisesResults;
     })
     .catch((error) => error);
